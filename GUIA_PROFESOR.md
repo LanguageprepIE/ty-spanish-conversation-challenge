@@ -3,13 +3,14 @@
 ## Funcionamiento
 
 1. Divide la clase en equipos de 3 o 4 y escribe sus nombres en la pantalla inicial.
-2. Cada equipo utiliza la pizarra de su agenda.
-3. Proyecta la pregunta y activa, si quieres, la cuenta atrás de 30 segundos.
-4. Los equipos escriben A, B, C o D sin enseñar su respuesta.
-5. Pulsa **¡Arriba las respuestas!** y todos las levantan simultáneamente. La solución todavía permanece oculta.
-6. Cuando hayas comprobado que nadie cambia su respuesta, pulsa **Revelar respuesta**.
-7. Pulsa en el marcador los equipos que han acertado y selecciona **Sumar y continuar**.
-8. La clasificación aparece automáticamente después de las rondas 5, 10, 15 y 20.
+2. Selecciona el tema y una conversación A, B o C. También puedes elegir **Aleatoria** para que la web escoja sin anunciar la versión.
+3. Cada equipo utiliza la pizarra de su agenda.
+4. Proyecta la pregunta y activa, si quieres, la cuenta atrás de 30 segundos.
+5. Los equipos escriben A, B, C o D sin enseñar su respuesta.
+6. Pulsa **¡Arriba las respuestas!** y todos las levantan simultáneamente. La solución todavía permanece oculta.
+7. Cuando hayas comprobado que nadie cambia su respuesta, pulsa **Revelar respuesta**.
+8. Pulsa en el marcador los equipos que han acertado y selecciona **Sumar y continuar**.
+9. La clasificación aparece automáticamente después de las rondas 5, 10, 15 y 20.
 
 Todos los equipos participan en las veinte rondas. Las rondas 1–10 valen un punto y las rondas 11–20 valen dos.
 
