@@ -10,7 +10,8 @@ No necesita servidor, base de datos, cuentas ni claves. Los puntos solo existen 
 
 ## Contenido
 
-- Partida 1: Conocer a alguien (20 rondas)
-- Partida 2: Un día en el instituto (20 rondas)
+- Conocer a alguien: conversaciones A, B y C (60 rondas)
+- Un día en el instituto: conversaciones A, B y C (60 rondas)
+- Selector de conversación concreta o aleatoria
 
-Para crear temas nuevos, duplica un objeto dentro de `data/conversations.json` y conserva la misma estructura.
+Las conversaciones A están en `data/conversations.json`. Las variantes B y C están en `data/variants.json`.
