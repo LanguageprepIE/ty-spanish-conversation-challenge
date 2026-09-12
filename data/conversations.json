@@ -4,6 +4,14 @@
       "id": "presentaciones",
       "title": "Partida 1 · Conocer a alguien",
       "description": "Saludos, datos personales, gustos, familia y despedidas. Empieza muy accesible y termina exigiendo atención al contexto.",
+      "review": {
+        "title": "Conocer y conectar",
+        "subtitle": "Guarda las expresiones que permiten presentarte, mostrar interés y mantener una conversación.",
+        "phrases": ["¿Cómo te llamas?", "¿De dónde eres?", "¿Dónde vives?", "¿Qué te gusta hacer?", "¿Cómo es…?", "¿Qué prefieres?", "¿A qué hora quedamos?", "Nos vemos…"],
+        "structures": ["Soy de… / Vivo en…", "Tengo … años.", "Me gusta + infinitivo", "Suelo + infinitivo", "Prefiero… porque…", "Podemos + infinitivo"],
+        "core": "Copia cinco expresiones y completa tres con información verdadera sobre ti.",
+        "challenge": "Escribe un diálogo de seis intervenciones. Utiliza al menos cuatro expresiones y un conector: pero, porque o también."
+      },
       "rounds": [
         {"scene":"Un alumno nuevo","context":{"es":"Es el primer día. Alba conoce a Leo.","en":"It is the first day. Alba meets Leo."},"speaker":"Alba","prompt":{"es":"Hola, me llamo Alba. ¿Cómo te llamas?","en":"Choose Leo's best reply."},"options":["Me llamo Leo. Encantado.","Tengo dos hermanas."],"correct":0,"explanation":"Responde directamente a ¿cómo te llamas? / It answers the question directly."},
         {"scene":"Un alumno nuevo","context":{"es":"Leo acaba de decir su nombre.","en":"Leo has just introduced himself."},"speaker":"Alba","prompt":{"es":"Encantada, Leo. ¿De dónde eres?","en":"Where is Leo from?"},"options":["Soy de Drogheda.","Son las nueve."],"correct":0,"explanation":"Para indicar origen usamos soy de + lugar. / Use soy de + place."},
@@ -31,6 +39,14 @@
       "id": "instituto",
       "title": "Partida 2 · Un día en el instituto",
       "description": "Horario, asignaturas, profesores, instalaciones y vida escolar. La segunda mitad exige interpretar y reparar conversaciones.",
+      "review": {
+        "title": "Resolver el día escolar",
+        "subtitle": "Guarda las expresiones que sirven para orientarte, pedir ayuda, colaborar y explicar tus preferencias.",
+        "phrases": ["¿Qué tenemos a primera hora?", "¿Dónde está el aula?", "¿Puede repetir, por favor?", "No he entendido…", "¿Qué tenemos que hacer?", "¿Cómo repartimos el trabajo?", "Podríamos…", "La próxima vez…"],
+        "structures": ["Tenemos que + infinitivo", "Hay que + infinitivo", "Se me da bien / mal…", "Prefiero… porque…", "Podríamos + infinitivo", "Primero…, después…, al final…"],
+        "core": "Copia cinco expresiones y escribe una respuesta apropiada para dos de ellas.",
+        "challenge": "Escribe un diálogo de seis intervenciones en el que aparezca un problema escolar, una petición de ayuda y una solución."
+      },
       "rounds": [
         {"scene":"Antes de clase","context":{"es":"Nora no sabe qué asignatura tiene primero.","en":"Nora does not know her first subject."},"speaker":"Nora","prompt":{"es":"¿Qué tenemos a primera hora?","en":"Choose the direct answer."},"options":["Tenemos español.","El instituto es grande."],"correct":0,"explanation":"Pregunta por una asignatura del horario."},
         {"scene":"Antes de clase","context":{"es":"La clase de español es en otra aula.","en":"Spanish is in another classroom."},"speaker":"Nora","prompt":{"es":"¿Dónde es la clase?","en":"Choose the place."},"options":["En el aula doce.","A las nueve."],"correct":0,"explanation":"¿Dónde? pide un lugar, no una hora."},
