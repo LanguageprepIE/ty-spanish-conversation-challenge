@@ -26,7 +26,7 @@ const els = {
 
 async function init() {
   try {
-    const response = await fetch('data/conversations.json');
+    const response = await fetch('conversations.json');
     if (!response.ok) throw new Error('No se pudo cargar el banco de preguntas.');
     state.data = await response.json();
     state.data.topics.forEach(topic => {
