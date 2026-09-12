@@ -1,6 +1,7 @@
 const state = {
   data: null,
   topic: null,
+  game: null,
   teams: [],
   round: 0,
   selectedTeams: new Set(),
@@ -13,7 +14,8 @@ const state = {
 const $ = (selector) => document.querySelector(selector);
 const els = {
   setupScreen: $('#setupScreen'), gameScreen: $('#gameScreen'), setupForm: $('#setupForm'),
-  topicSelect: $('#topicSelect'), topicDescription: $('#topicDescription'), teamInputs: $('#teamInputs'),
+  topicSelect: $('#topicSelect'), topicDescription: $('#topicDescription'),
+  variantSelect: $('#variantSelect'), variantDescription: $('#variantDescription'), teamInputs: $('#teamInputs'),
   addTeamBtn: $('#addTeamBtn'), topicLabel: $('#topicLabel'), sceneLabel: $('#sceneLabel'),
   roundNumber: $('#roundNumber'), pointValue: $('#pointValue'), progressBar: $('#progressBar'),
   contextBox: $('#contextBox'), speakerBadge: $('#speakerBadge'), promptText: $('#promptText'),
@@ -27,9 +29,17 @@ const els = {
 
 async function init() {
   try {
-    const response = await fetch('data/conversations.json');
-    if (!response.ok) throw new Error('No se pudo cargar el banco de preguntas.');
-    state.data = await response.json();
+    const [baseResponse, variantsResponse] = await Promise.all([
+      fetch('data/conversations.json'),
+      fetch('data/variants.json')
+    ]);
+    if (!baseResponse.ok || !variantsResponse.ok) throw new Error('No se pudo cargar el banco de preguntas.');
+    state.data = await baseResponse.json();
+    const extraData = await variantsResponse.json();
+    state.data.topics.forEach(topic => {
+      topic.variants = [{ id: 'A', title: 'Conversación A · Original', description: 'La primera secuencia del tema.', rounds: topic.rounds }];
+      extraData.variants.filter(variant => variant.topicId === topic.id).forEach(variant => topic.variants.push(variant));
+    });
     state.data.topics.forEach(topic => {
       const option = document.createElement('option');
       option.value = topic.id;
@@ -57,6 +67,24 @@ function addTeamInput(value = '') {
 function updateTopicDescription() {
   const topic = state.data.topics.find(item => item.id === els.topicSelect.value);
   els.topicDescription.textContent = topic.description;
+  els.variantSelect.innerHTML = '<option value="random">Aleatoria · Surprise me</option>';
+  topic.variants.forEach(variant => {
+    const option = document.createElement('option');
+    option.value = variant.id;
+    option.textContent = variant.title;
+    els.variantSelect.append(option);
+  });
+  updateVariantDescription();
+}
+
+function updateVariantDescription() {
+  const topic = state.data.topics.find(item => item.id === els.topicSelect.value);
+  if (els.variantSelect.value === 'random') {
+    els.variantDescription.textContent = 'La web elegirá una conversación sin mostrar la letra. / The game will choose for you.';
+    return;
+  }
+  const variant = topic.variants.find(item => item.id === els.variantSelect.value);
+  els.variantDescription.textContent = variant.description;
 }
 
 function startGame(event) {
@@ -64,6 +92,11 @@ function startGame(event) {
   const names = [...els.teamInputs.querySelectorAll('input')].map(input => input.value.trim()).filter(Boolean);
   if (names.length < 2) return alert('Introduce al menos dos equipos.');
   state.topic = state.data.topics.find(item => item.id === els.topicSelect.value);
+  if (els.variantSelect.value === 'random') {
+    state.game = state.topic.variants[Math.floor(Math.random() * state.topic.variants.length)];
+  } else {
+    state.game = state.topic.variants.find(item => item.id === els.variantSelect.value);
+  }
   state.teams = names.map((name, index) => ({ id: index, name, score: 0 }));
   state.round = 0;
   els.setupScreen.hidden = true;
@@ -71,7 +104,7 @@ function startGame(event) {
   renderRound();
 }
 
-function currentRound() { return state.topic.rounds[state.round]; }
+function currentRound() { return state.game.rounds[state.round]; }
 function roundPoints() { return state.round < 10 ? 1 : 2; }
 
 function shuffledOptions(item) {
@@ -94,7 +127,7 @@ function renderRound() {
   els.sceneLabel.textContent = item.scene;
   els.roundNumber.textContent = state.round + 1;
   els.pointValue.textContent = `+${roundPoints()}`;
-  els.progressBar.style.width = `${((state.round + 1) / state.topic.rounds.length) * 100}%`;
+  els.progressBar.style.width = `${((state.round + 1) / state.game.rounds.length) * 100}%`;
   els.contextBox.innerHTML = `<strong>${item.context.es}</strong><span>${item.context.en}</span>`;
   els.speakerBadge.textContent = item.speaker;
   els.promptText.textContent = item.prompt.es;
@@ -171,7 +204,7 @@ function awardAndContinue() {
   const points = roundPoints();
   state.teams.forEach(team => { if (state.selectedTeams.has(team.id)) team.score += points; });
   const completedRound = state.round + 1;
-  const finished = completedRound === state.topic.rounds.length;
+  const finished = completedRound === state.game.rounds.length;
   state.round += 1;
   if (completedRound % 5 === 0 || finished) showLeaderboard(finished);
   else renderRound();
@@ -213,6 +246,7 @@ function stopTimer() {
 }
 
 els.topicSelect.addEventListener('change', updateTopicDescription);
+els.variantSelect.addEventListener('change', updateVariantDescription);
 els.addTeamBtn.addEventListener('click', () => addTeamInput());
 els.setupForm.addEventListener('submit', startGame);
 els.timerBtn.addEventListener('click', toggleTimer);
