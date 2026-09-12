@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Concurso de conversaciones guiadas para TY Spanish.">
+  <title>TY Spanish · Conversation Challenge</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1630'/%3E%3Cpath d='M14 17h36v24H32l-11 8v-8h-7z' fill='%23ffca58'/%3E%3Cpath d='M24 27h16M24 33h10' stroke='%230a1630' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Volver al inicio">
+        <span class="brand-mark">TY</span>
+        <span><strong>Spanish Challenge</strong><small>Conversaciones en juego</small></span>
+      </a>
+      <div class="credit">Creado por el Sr. Martín</div>
+    </header>
+
+    <section id="setupScreen" class="screen setup-screen">
+      <div class="setup-copy">
+        <span class="eyebrow">CONCURSO POR EQUIPOS</span>
+        <h1>¿Qué dirías<br><em>ahora?</em></h1>
+        <p>Veinte decisiones. Una conversación que avanza. Todos los equipos juegan hasta el final.</p>
+        <div class="rule-row" aria-label="Reglas principales">
+          <span>20 rondas</span><span>Dificultad gradual</span><span>Pizarras arriba</span>
+        </div>
+      </div>
+
+      <form id="setupForm" class="setup-panel">
+        <div class="field-group">
+          <label for="topicSelect">Elige la partida <small>Choose the game</small></label>
+          <select id="topicSelect" required></select>
+          <p id="topicDescription" class="field-note"></p>
+        </div>
+
+        <div class="field-group">
+          <div class="field-heading">
+            <label>Equipos <small>Teams</small></label>
+            <button id="addTeamBtn" class="text-button" type="button">+ Añadir equipo</button>
+          </div>
+          <div id="teamInputs" class="team-inputs"></div>
+        </div>
+
+        <button class="primary-button" type="submit">Comenzar la partida <span>→</span></button>
+      </form>
+    </section>
+
+    <section id="gameScreen" class="screen game-screen" hidden>
+      <div class="game-header">
+        <div>
+          <span id="topicLabel" class="eyebrow"></span>
+          <h2 id="sceneLabel"></h2>
+        </div>
+        <div class="round-cluster">
+          <div class="round-number"><span>RONDA</span><strong id="roundNumber">1</strong><small>/20</small></div>
+          <div class="point-value"><span id="pointValue">+1</span> punto</div>
+        </div>
+      </div>
+
+      <div class="progress-track" aria-label="Progreso de la partida"><span id="progressBar"></span></div>
+
+      <div class="game-layout">
+        <article class="question-card">
+          <div id="contextBox" class="context-box"></div>
+          <div class="dialogue-box">
+            <span id="speakerBadge" class="speaker-badge"></span>
+            <p id="promptText" class="prompt-text"></p>
+            <p id="promptEnglish" class="prompt-english"></p>
+          </div>
+          <div id="optionsGrid" class="options-grid"></div>
+
+          <div id="revealPanel" class="reveal-panel" hidden>
+            <div><span>RESPUESTA</span><strong id="correctAnswer"></strong></div>
+            <p id="explanationText"></p>
+          </div>
+
+          <div class="question-actions">
+            <div id="timer" class="timer" aria-live="polite"><span id="timerValue">30</span><small>segundos</small></div>
+            <button id="timerBtn" class="secondary-button" type="button">Iniciar tiempo</button>
+            <button id="boardsBtn" class="primary-button" type="button">¡Arriba las respuestas!</button>
+            <button id="revealBtn" class="secondary-button reveal-button" type="button" disabled>Revelar respuesta</button>
+          </div>
+        </article>
+
+        <aside class="score-panel">
+          <div class="score-heading">
+            <div><span class="eyebrow">MARCADOR</span><h3>¿Quién acertó?</h3></div>
+            <span class="score-hint">Pulsa los equipos correctos</span>
+          </div>
+          <div id="scoreTeams" class="score-teams"></div>
+          <button id="nextBtn" class="next-button" type="button" disabled>Sumar y continuar <span>→</span></button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="leaderboardDialog" class="leaderboard-dialog">
+    <div class="dialog-inner">
+      <span id="leaderboardKicker" class="eyebrow">CLASIFICACIÓN</span>
+      <h2 id="leaderboardTitle">Así va la partida</h2>
+      <div id="leaderboardList" class="leaderboard-list"></div>
+      <button id="continueBtn" class="primary-button" type="button">Continuar <span>→</span></button>
+    </div>
+  </dialog>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
