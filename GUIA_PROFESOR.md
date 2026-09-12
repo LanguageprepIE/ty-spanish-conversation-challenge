@@ -14,6 +14,17 @@
 
 Todos los equipos participan en las veinte rondas. Las rondas 1–10 valen un punto y las rondas 11–20 valen dos.
 
+## Cierre de la partida
+
+Después de la ronda 20 aparece la celebración del equipo campeón o de los equipos empatados. Pulsa **Ver lo que hemos aprendido** para proyectar el resumen del tema.
+
+La pantalla final contiene expresiones útiles, estructuras clave y dos tareas:
+
+- **Core:** actividad accesible para todo el grupo.
+- **Challenge:** producción escrita más independiente para alumnado de nivel alto o 5th Year OL.
+
+Puedes activar una cuenta atrás de cinco minutos mientras escriben en sus cuadernos.
+
 ## Clase 1 — Conocer a alguien
 
 **Objetivos:** comprender preguntas personales; reconocer respuestas lógicas; consolidar presentaciones, edad, cumpleaños, aficiones y familia.

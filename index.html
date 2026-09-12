@@ -103,10 +103,54 @@
         </aside>
       </div>
     </section>
+
+    <section id="reviewScreen" class="screen review-screen" hidden>
+      <div class="review-header">
+        <div>
+          <span class="eyebrow">LO QUE NOS LLEVAMOS · TAKE-AWAY</span>
+          <h2 id="reviewTitle">Repaso final</h2>
+          <p id="reviewSubtitle"></p>
+        </div>
+        <div class="review-timer"><strong id="reviewTimerValue">05:00</strong><button id="reviewTimerBtn" class="secondary-button" type="button">Iniciar 5 minutos</button></div>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card phrases-card">
+          <span class="card-number">01</span>
+          <h3>Expresiones útiles <small>Useful expressions</small></h3>
+          <ul id="reviewPhrases"></ul>
+        </article>
+        <article class="review-card structures-card">
+          <span class="card-number">02</span>
+          <h3>Estructuras clave <small>Key structures</small></h3>
+          <ul id="reviewStructures"></ul>
+        </article>
+        <article class="review-card task-card core-card">
+          <span class="level-pill">CORE</span>
+          <h3>Tu tarea</h3>
+          <p id="coreTask"></p>
+        </article>
+        <article class="review-card task-card challenge-card">
+          <span class="level-pill">CHALLENGE</span>
+          <h3>¿Quieres más?</h3>
+          <p id="challengeTask"></p>
+        </article>
+      </div>
+
+      <div class="review-actions">
+        <button id="newGameBtn" class="primary-button" type="button">Nueva partida <span>↻</span></button>
+      </div>
+    </section>
   </main>
 
   <dialog id="leaderboardDialog" class="leaderboard-dialog">
     <div class="dialog-inner">
+      <div id="celebration" class="celebration" hidden>
+        <div class="confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <span class="winner-star">★</span>
+        <p id="winnerLabel">CAMPEONES DE LA CONVERSACIÓN</p>
+        <strong id="winnerName"></strong>
+      </div>
       <span id="leaderboardKicker" class="eyebrow">CLASIFICACIÓN</span>
       <h2 id="leaderboardTitle">Así va la partida</h2>
       <div id="leaderboardList" class="leaderboard-list"></div>
