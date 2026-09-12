@@ -8,7 +8,9 @@ const state = {
   revealed: false,
   boardsRaised: false,
   timerId: null,
-  seconds: 30
+  seconds: 30,
+  reviewTimerId: null,
+  reviewSeconds: 300
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -24,7 +26,12 @@ const els = {
   timerValue: $('#timerValue'), timerBtn: $('#timerBtn'), boardsBtn: $('#boardsBtn'), revealBtn: $('#revealBtn'),
   scoreTeams: $('#scoreTeams'), nextBtn: $('#nextBtn'), leaderboardDialog: $('#leaderboardDialog'),
   leaderboardKicker: $('#leaderboardKicker'), leaderboardTitle: $('#leaderboardTitle'),
-  leaderboardList: $('#leaderboardList'), continueBtn: $('#continueBtn')
+  leaderboardList: $('#leaderboardList'), continueBtn: $('#continueBtn'),
+  celebration: $('#celebration'), winnerLabel: $('#winnerLabel'), winnerName: $('#winnerName'),
+  reviewScreen: $('#reviewScreen'), reviewTitle: $('#reviewTitle'), reviewSubtitle: $('#reviewSubtitle'),
+  reviewPhrases: $('#reviewPhrases'), reviewStructures: $('#reviewStructures'),
+  coreTask: $('#coreTask'), challengeTask: $('#challengeTask'),
+  reviewTimerValue: $('#reviewTimerValue'), reviewTimerBtn: $('#reviewTimerBtn'), newGameBtn: $('#newGameBtn')
 };
 
 async function init() {
@@ -212,12 +219,20 @@ function awardAndContinue() {
 
 function showLeaderboard(finished) {
   const sorted = [...state.teams].sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+  const topScore = sorted[0].score;
+  const winners = sorted.filter(team => team.score === topScore);
   els.leaderboardKicker.textContent = finished ? 'RESULTADO FINAL' : `TRAS LA RONDA ${state.round}`;
-  els.leaderboardTitle.textContent = finished ? '¡Tenemos ganador!' : 'Así va la partida';
+  els.leaderboardTitle.textContent = finished ? 'Clasificación final' : 'Así va la partida';
+  els.leaderboardDialog.classList.toggle('is-final', finished);
+  els.celebration.hidden = !finished;
+  if (finished) {
+    els.winnerLabel.textContent = winners.length === 1 ? 'CAMPEONES DE LA CONVERSACIÓN' : '¡EMPATE EN PRIMERA POSICIÓN!';
+    els.winnerName.textContent = winners.map(team => team.name).join(' · ');
+  }
   els.leaderboardList.innerHTML = sorted.map((team, index) => `
     <div class="leader-row"><span class="leader-rank">${index + 1}</span><span class="leader-name">${team.name}</span><span class="leader-points">${team.score} pt</span></div>
   `).join('');
-  els.continueBtn.innerHTML = finished ? 'Nueva partida <span>↻</span>' : 'Continuar <span>→</span>';
+  els.continueBtn.innerHTML = finished ? 'Ver lo que hemos aprendido <span>→</span>' : 'Continuar <span>→</span>';
   els.continueBtn.dataset.finished = String(finished);
   els.leaderboardDialog.showModal();
 }
@@ -225,8 +240,49 @@ function showLeaderboard(finished) {
 function continueGame() {
   const finished = els.continueBtn.dataset.finished === 'true';
   els.leaderboardDialog.close();
-  if (finished) window.location.reload();
+  if (finished) showReview();
   else renderRound();
+}
+
+function showReview() {
+  const review = state.topic.review;
+  els.gameScreen.hidden = true;
+  els.reviewScreen.hidden = false;
+  els.reviewTitle.textContent = review.title;
+  els.reviewSubtitle.textContent = review.subtitle;
+  els.reviewPhrases.innerHTML = review.phrases.map(item => `<li>${item}</li>`).join('');
+  els.reviewStructures.innerHTML = review.structures.map(item => `<li>${item}</li>`).join('');
+  els.coreTask.textContent = review.core;
+  els.challengeTask.textContent = review.challenge;
+  state.reviewSeconds = 300;
+  updateReviewTimer();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function updateReviewTimer() {
+  const minutes = Math.floor(state.reviewSeconds / 60).toString().padStart(2, '0');
+  const seconds = (state.reviewSeconds % 60).toString().padStart(2, '0');
+  els.reviewTimerValue.textContent = `${minutes}:${seconds}`;
+}
+
+function toggleReviewTimer() {
+  if (state.reviewTimerId) {
+    window.clearInterval(state.reviewTimerId);
+    state.reviewTimerId = null;
+    els.reviewTimerBtn.textContent = 'Continuar tiempo';
+    return;
+  }
+  if (state.reviewSeconds <= 0) return;
+  els.reviewTimerBtn.textContent = 'Pausar';
+  state.reviewTimerId = window.setInterval(() => {
+    state.reviewSeconds -= 1;
+    updateReviewTimer();
+    if (state.reviewSeconds <= 0) {
+      window.clearInterval(state.reviewTimerId);
+      state.reviewTimerId = null;
+      els.reviewTimerBtn.textContent = 'Tiempo terminado';
+    }
+  }, 1000);
 }
 
 function toggleTimer() {
@@ -254,5 +310,7 @@ els.boardsBtn.addEventListener('click', raiseBoards);
 els.revealBtn.addEventListener('click', revealAnswer);
 els.nextBtn.addEventListener('click', awardAndContinue);
 els.continueBtn.addEventListener('click', continueGame);
+els.reviewTimerBtn.addEventListener('click', toggleReviewTimer);
+els.newGameBtn.addEventListener('click', () => window.location.reload());
 
 init();
