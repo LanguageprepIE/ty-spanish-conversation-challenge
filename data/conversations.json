@@ -864,99 +864,104 @@
       },
       "rounds": [
         {
-          "scene": "El centro",
+          "scene": "Repaso de vocabulario",
           "context": {
-            "es": "Estás recorriendo una ciudad española con tus compañeros.",
-            "en": "You are exploring a Spanish town with your classmates."
+            "es": "Calentamiento: edificios y tiendas.",
+            "en": "Warm-up: buildings and shops."
           },
-          "speaker": "Ana",
+          "speaker": "Profesor",
           "prompt": {
-            "es": "Quiero ver cuadros famosos. ¿Adónde vamos?",
-            "en": "Choose the most appropriate reply or destination."
+            "es": "¿Qué significa «el ayuntamiento»?",
+            "en": "Choose the correct English meaning."
           },
           "options": [
-            "Al museo",
-            "Al banco",
-            "A la carnicería"
+            "Town hall",
+            "Hospital",
+            "Castle",
+            "Museum"
           ],
           "correct": 0,
-          "explanation": "El museo es un lugar para ver obras de arte."
+          "explanation": "Repaso de vocabulario antes de las situaciones comunicativas."
         },
         {
-          "scene": "Un recado",
+          "scene": "Repaso de vocabulario",
           "context": {
-            "es": "Estás recorriendo una ciudad española con tus compañeros.",
-            "en": "You are exploring a Spanish town with your classmates."
+            "es": "Calentamiento: edificios y tiendas.",
+            "en": "Warm-up: buildings and shops."
           },
-          "speaker": "Leo",
+          "speaker": "Profesor",
           "prompt": {
-            "es": "Necesito sacar dinero. ¿Adónde voy?",
-            "en": "Choose the most appropriate reply or destination."
+            "es": "¿Qué significa «la comisaría»?",
+            "en": "Choose the correct English meaning."
           },
           "options": [
-            "Al parque",
-            "Al banco",
-            "Al zoo"
-          ],
-          "correct": 1,
-          "explanation": "En el banco se puede sacar dinero."
-        },
-        {
-          "scene": "De compras",
-          "context": {
-            "es": "Estás recorriendo una ciudad española con tus compañeros.",
-            "en": "You are exploring a Spanish town with your classmates."
-          },
-          "speaker": "Sara",
-          "prompt": {
-            "es": "Quiero comprar pan para desayunar.",
-            "en": "Choose the most appropriate reply or destination."
-          },
-          "options": [
-            "A la joyería",
-            "A la panadería",
-            "A la librería"
-          ],
-          "correct": 1,
-          "explanation": "En la panadería venden pan."
-        },
-        {
-          "scene": "Una emergencia",
-          "context": {
-            "es": "Estás recorriendo una ciudad española con tus compañeros.",
-            "en": "You are exploring a Spanish town with your classmates."
-          },
-          "speaker": "Diego",
-          "prompt": {
-            "es": "Mi hermano está enfermo y necesita atención médica.",
-            "en": "Choose the most appropriate reply or destination."
-          },
-          "options": [
-            "Al hospital",
-            "Al teatro",
-            "Al estadio"
+            "Police station",
+            "Bakery",
+            "Bank",
+            "Park"
           ],
           "correct": 0,
-          "explanation": "El hospital atiende a personas enfermas."
+          "explanation": "Repaso de vocabulario antes de las situaciones comunicativas."
         },
         {
-          "scene": "Un regalo",
+          "scene": "Repaso de vocabulario",
           "context": {
-            "es": "Estás recorriendo una ciudad española con tus compañeros.",
-            "en": "You are exploring a Spanish town with your classmates."
+            "es": "Calentamiento: edificios y tiendas.",
+            "en": "Warm-up: buildings and shops."
           },
-          "speaker": "Lucía",
+          "speaker": "Profesor",
           "prompt": {
-            "es": "A mi hermana le encanta leer. Quiero comprarle una novela.",
-            "en": "Choose the most appropriate reply or destination."
+            "es": "¿Qué significa «la panadería»?",
+            "en": "Choose the correct English meaning."
           },
           "options": [
-            "A la carnicería",
-            "A la librería",
-            "A la farmacia"
+            "Bakery",
+            "Bookshop",
+            "Butcher's",
+            "Jeweller's"
           ],
-          "correct": 1,
-          "explanation": "En la librería venden libros."
+          "correct": 0,
+          "explanation": "Repaso de vocabulario antes de las situaciones comunicativas."
+        },
+        {
+          "scene": "Repaso de vocabulario",
+          "context": {
+            "es": "Calentamiento: edificios y tiendas.",
+            "en": "Warm-up: buildings and shops."
+          },
+          "speaker": "Profesor",
+          "prompt": {
+            "es": "¿Qué significa «la librería»?",
+            "en": "Choose the correct English meaning."
+          },
+          "options": [
+            "Bookshop",
+            "Library building",
+            "Fishmonger's",
+            "Pharmacy"
+          ],
+          "correct": 0,
+          "explanation": "Repaso de vocabulario antes de las situaciones comunicativas."
+        },
+        {
+          "scene": "Repaso de vocabulario",
+          "context": {
+            "es": "Calentamiento: edificios y tiendas.",
+            "en": "Warm-up: buildings and shops."
+          },
+          "speaker": "Profesor",
+          "prompt": {
+            "es": "¿Qué significa «el aparcamiento»?",
+            "en": "Choose the correct English meaning."
+          },
+          "options": [
+            "Car park",
+            "Town square",
+            "Old quarter",
+            "Stadium"
+          ],
+          "correct": 0,
+          "explanation": "Repaso de vocabulario antes de las situaciones comunicativas."
         },
         {
           "scene": "La ciudad",
