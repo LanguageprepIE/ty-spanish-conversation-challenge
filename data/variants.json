@@ -1775,202 +1775,202 @@
         {
           "scene": "Una visita",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "¿Qué hay en tu pueblo?",
-            "en": "Choose the best answer."
+            "es": "Clara: «La oficina de turismo está frente al teatro». ¿Dónde debe buscarla Sam?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Hay una iglesia y un parque.",
-            "Voy a la farmacia.",
-            "Tengo dieciséis años.",
-            "Son las tres."
+            "Enfrente del teatro",
+            "Dentro del teatro",
+            "Detrás del hospital",
+            "Junto al estadio"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Hay una iglesia y un parque.."
+          "explanation": "Enfrente del teatro. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "Una visita",
+          "scene": "El regalo",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "En mi pueblo no hay cine. ¿Qué significa?",
-            "en": "Choose the best answer."
+            "es": "Leo: «Quiero un regalo para mi hermano. Tiene ocho años y le encantan los juegos». ¿Adónde irá?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "There isn't a cinema.",
-            "There are two cinemas.",
-            "The cinema is old.",
-            "I'm going to the cinema."
+            "A la juguetería",
+            "A la joyería",
+            "A la farmacia",
+            "A la lavandería"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: There isn't a cinema.."
+          "explanation": "A la juguetería. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "Comprar regalos",
+          "scene": "La tienda cerrada",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "¿Dónde puedo comprar juguetes para mi primo?",
-            "en": "Choose the best answer."
+            "es": "Ana: «La papelería abre a las diez. Son las nueve y media». ¿Qué hacemos?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "En la juguetería",
-            "En la carnicería",
-            "En el banco",
-            "En el teatro"
+            "Esperar media hora",
+            "Entrar ahora",
+            "Volver dentro de dos horas",
+            "Ir a comprar carne"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: En la juguetería."
+          "explanation": "Esperar media hora. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "De compras",
+          "scene": "Un error",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "Quiero comprar lápices y cuadernos.",
-            "en": "Choose the best answer."
+            "es": "Pablo: «Voy a la librería a devolver un libro prestado por la biblioteca». ¿Qué debería hacer?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Voy a la papelería",
-            "Voy a la pescadería",
-            "Voy al estadio",
-            "Voy a la piscina"
+            "Ir a la biblioteca",
+            "Ir al banco",
+            "Ir a la carnicería",
+            "Ir a la joyería"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Voy a la papelería."
+          "explanation": "Ir a la biblioteca. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "La ciudad",
+          "scene": "Dos opciones",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "El turista pregunta: «¿Dónde está la plaza mayor?»",
-            "en": "Choose the best answer."
+            "es": "Nora: «Podemos ir al zoo o al museo, pero hoy hace mucho frío y prefiero estar dentro». ¿Qué elegirá?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Está cerca del ayuntamiento.",
-            "Me gustan las plazas.",
-            "Son las cinco.",
-            "Tengo una hermana."
+            "El museo",
+            "El zoo",
+            "El parque",
+            "La piscina exterior"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Está cerca del ayuntamiento.."
+          "explanation": "El museo. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "Planes",
+          "scene": "En el mercado",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "Quiero ver una película esta tarde.",
-            "en": "Choose the best answer."
+            "es": "Vendedor: «Las manzanas cuestan dos euros y las naranjas tres». Inés solo tiene dos euros. ¿Qué puede comprar?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Vamos al cine.",
-            "Vamos a la comisaría.",
-            "Vamos a la oficina de correos.",
-            "Vamos a la panadería."
+            "Las manzanas",
+            "Las naranjas",
+            "Las dos cosas",
+            "Ninguna fruta"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Vamos al cine.."
+          "explanation": "Las manzanas. La información del diálogo permite deducir la respuesta."
+        },
+        {
+          "scene": "Una dirección",
+          "context": {
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
+          },
+          "speaker": "Narrador",
+          "prompt": {
+            "es": "Turista: «¿Está lejos el castillo?» Vecina: «No, está a cinco minutos andando». ¿Qué entiende el turista?",
+            "en": "Read carefully and choose the best answer."
+          },
+          "options": [
+            "Puede ir a pie",
+            "Necesita un tren",
+            "Está cerrado",
+            "Está a cinco kilómetros"
+          ],
+          "correct": 0,
+          "explanation": "Puede ir a pie. La información del diálogo permite deducir la respuesta."
+        },
+        {
+          "scene": "El partido",
+          "context": {
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
+          },
+          "speaker": "Narrador",
+          "prompt": {
+            "es": "Sam: «El partido empieza a las cinco, pero el estadio abre a las cuatro». ¿Cuándo podemos entrar?",
+            "en": "Read carefully and choose the best answer."
+          },
+          "options": [
+            "A las cuatro",
+            "A las cinco y media",
+            "A las seis",
+            "A las tres"
+          ],
+          "correct": 0,
+          "explanation": "A las cuatro. La información del diálogo permite deducir la respuesta."
         },
         {
           "scene": "Un recado",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "Mi padre necesita comprar tornillos para reparar una puerta.",
-            "en": "Choose the best answer."
+            "es": "Marta: «Primero tengo que comprar tornillos y luego recoger una tarta». ¿Qué tiendas necesita?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Va a la ferretería.",
-            "Va a la heladería.",
-            "Va a la librería.",
-            "Va al zoo."
+            "Ferretería y pastelería",
+            "Joyería y farmacia",
+            "Librería y carnicería",
+            "Frutería y zapatería"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Va a la ferretería.."
-        },
-        {
-          "scene": "El centro",
-          "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
-          },
-          "speaker": "Narrador",
-          "prompt": {
-            "es": "¿Qué frase es correcta?",
-            "en": "Choose the best answer."
-          },
-          "options": [
-            "Voy al museo.",
-            "Voy a el museo.",
-            "Voy en el museo comprar.",
-            "Voy a la museo."
-          ],
-          "correct": 0,
-          "explanation": "Respuesta correcta: Voy al museo.."
-        },
-        {
-          "scene": "Un paseo",
-          "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
-          },
-          "speaker": "Narrador",
-          "prompt": {
-            "es": "Primero compramos fruta y después vemos una película. ¿Qué recorrido seguimos?",
-            "en": "Choose the best answer."
-          },
-          "options": [
-            "Frutería → cine",
-            "Cine → frutería",
-            "Banco → teatro",
-            "Farmacia → zoo"
-          ],
-          "correct": 0,
-          "explanation": "Respuesta correcta: Frutería → cine."
+          "explanation": "Ferretería y pastelería. La información del diálogo permite deducir la respuesta."
         },
         {
           "scene": "Reto final",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "¿Qué combinación es correcta?",
-            "en": "Choose the best answer."
+            "es": "Clara: «Tenemos una hora. El museo cierra en diez minutos y el cine abre en media hora». ¿Qué plan tiene más sentido?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Pan → panadería; libros → librería",
-            "Pan → farmacia; libros → banco",
-            "Pan → estadio; libros → zoo",
-            "Pan → castillo; libros → piscina"
+            "Ir al cine cuando abra",
+            "Visitar el museo durante una hora",
+            "Esperar en el museo cerrado",
+            "Ir al cine hace media hora"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Pan → panadería; libros → librería."
+          "explanation": "Ir al cine cuando abra. La información del diálogo permite deducir la respuesta."
         }
       ]
     },
@@ -2171,204 +2171,204 @@
           "explanation": "Respuesta correcta: Vamos a la frutería."
         },
         {
-          "scene": "Una conversación",
+          "scene": "En el casco antiguo",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "¿Hay un hospital en tu pueblo?",
-            "en": "Choose the best answer."
+            "es": "Eva: «La plaza está detrás de la iglesia». ¿Qué lugar hay delante de la plaza?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Sí, hay uno cerca del centro.",
-            "Sí, soy del centro.",
-            "Sí, tengo uno.",
-            "Sí, voy un hospital."
+            "La iglesia",
+            "La piscina",
+            "La farmacia",
+            "El estadio"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Sí, hay uno cerca del centro.."
+          "explanation": "La iglesia. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "Una conversación",
+          "scene": "Dos tiendas",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "¿Cuál es tu edificio favorito de la ciudad?",
-            "en": "Choose the best answer."
+            "es": "Diego: «En la frutería no venden pescado». ¿Qué debe hacer?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Me gusta el castillo porque es antiguo.",
-            "Tengo dieciséis años.",
-            "Soy de Irlanda.",
-            "No quiero comer."
+            "Ir a la pescadería",
+            "Ir a la joyería",
+            "Ir al banco",
+            "Ir al museo"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Me gusta el castillo porque es antiguo.."
+          "explanation": "Ir a la pescadería. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "Turistas",
+          "scene": "Una pregunta",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "¿Dónde podemos pedir información sobre visitas y excursiones?",
-            "en": "Choose the best answer."
+            "es": "Turista: «¿A qué hora cierra la oficina de turismo?» ¿Qué respuesta encaja?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "En la oficina de turismo",
-            "En la carnicería",
-            "En la lavandería",
-            "En la joyería"
+            "A las seis de la tarde",
+            "Está al lado del banco",
+            "Es muy bonita",
+            "Hay tres oficinas"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: En la oficina de turismo."
+          "explanation": "A las seis de la tarde. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "Un regalo",
+          "scene": "En la peluquería",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "Mi amiga quiere unos pendientes nuevos.",
-            "en": "Choose the best answer."
+            "es": "Nora: «Quería cortarme el pelo, pero no tengo cita». ¿Qué pregunta sería útil?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Va a la joyería",
-            "Va a la frutería",
-            "Va al estadio",
-            "Va al hospital"
+            "¿Tiene algún hueco hoy?",
+            "¿Dónde venden tomates?",
+            "¿Cuánto cuesta el pescado?",
+            "¿Hay un castillo?"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Va a la joyería."
+          "explanation": "¿Tiene algún hueco hoy?. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "En el centro",
+          "scene": "Un día de lluvia",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "¿Qué pregunta sirve para encontrar el museo?",
-            "en": "Choose the best answer."
+            "es": "Lucas: «Me apetece pasear, pero llueve mucho». ¿Qué alternativa es más adecuada?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "¿Dónde está el museo?",
-            "¿Cómo te llamas museo?",
-            "¿Cuántos museos tienes años?",
-            "¿Qué comes museo?"
+            "Visitar un museo",
+            "Ir a la piscina exterior",
+            "Hacer un picnic",
+            "Sentarse en el parque"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: ¿Dónde está el museo?."
+          "explanation": "Visitar un museo. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "El pueblo",
+          "scene": "En la plaza",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "Mi pueblo es pequeño, pero tiene una plaza y dos parques. ¿Qué es cierto?",
-            "en": "Choose the best answer."
+            "es": "Ana: «Hay dos cafeterías, pero ninguna está abierta». ¿Qué significa?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Hay dos parques.",
-            "No hay parques.",
-            "Hay dos plazas.",
-            "La plaza es un parque."
+            "Las dos están cerradas",
+            "Una está abierta",
+            "Las dos están abiertas",
+            "No hay cafeterías"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Hay dos parques.."
+          "explanation": "Las dos están cerradas. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "Un plan",
+          "scene": "Una dirección",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "No tenemos coche y queremos ir a pie. ¿Qué pregunta es útil?",
-            "en": "Choose the best answer."
+            "es": "Sara: «La librería está entre el banco y la farmacia». ¿Qué edificios tiene a los lados?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "¿Está lejos de aquí?",
-            "¿Cuántos coches tienes?",
-            "¿Te gusta conducir ayer?",
-            "¿Dónde compras un coche?"
+            "El banco y la farmacia",
+            "El museo y el cine",
+            "La panadería y el zoo",
+            "El ayuntamiento y el estadio"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: ¿Está lejos de aquí?."
+          "explanation": "El banco y la farmacia. La información del diálogo permite deducir la respuesta."
         },
         {
           "scene": "Una compra",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "Primero quiero comprar pescado; después, un pastel.",
-            "en": "Choose the best answer."
+            "es": "Leo: «Busco algo dulce para el cumpleaños de mi abuela, pero no quiere helado». ¿Qué compra?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Pescadería → pastelería",
-            "Pastelería → librería",
-            "Carnicería → banco",
-            "Farmacia → zoo"
+            "Una tarta en la pastelería",
+            "Pescado en la pescadería",
+            "Zapatos en la zapatería",
+            "Un helado en la heladería"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Pescadería → pastelería."
+          "explanation": "Una tarta en la pastelería. La información del diálogo permite deducir la respuesta."
         },
         {
-          "scene": "La ciudad",
+          "scene": "Una recomendación",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "La piscina está detrás del estadio. ¿Dónde está la piscina?",
-            "en": "Choose the best answer."
+            "es": "Clara: «No me gustan las multitudes y hoy hay un concierto en la plaza». ¿Qué plan es más tranquilo?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Detrás del estadio",
-            "Delante del estadio",
-            "Dentro del museo",
-            "Al lado del banco"
+            "Leer en un parque tranquilo",
+            "Ir al concierto",
+            "Entrar en el estadio lleno",
+            "Quedarse en la plaza"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Detrás del estadio."
+          "explanation": "Leer en un parque tranquilo. La información del diálogo permite deducir la respuesta."
         },
         {
           "scene": "Reto final",
           "context": {
-            "es": "Estás de visita en una ciudad española.",
-            "en": "You are visiting a Spanish town."
+            "es": "Lee el diálogo o la situación y elige la respuesta más lógica.",
+            "en": "Read the dialogue or situation and choose the most logical answer."
           },
           "speaker": "Narrador",
           "prompt": {
-            "es": "Un turista quiere visitar un castillo, comprar recuerdos y pedir información. ¿Qué opción tiene más sentido?",
-            "en": "Choose the best answer."
+            "es": "Un turista quiere preguntar por horarios, comprar un mapa y visitar calles históricas. ¿Qué plan es lógico?",
+            "en": "Read carefully and choose the best answer."
           },
           "options": [
-            "Castillo, tiendas y oficina de turismo",
-            "Hospital, comisaría y lavandería",
-            "Banco, carnicería y piscina",
-            "Estadio, farmacia y pescadería"
+            "Oficina de turismo → mapa → casco antiguo",
+            "Carnicería → estadio → piscina",
+            "Hospital → joyería → zoo",
+            "Pescadería → peluquería → banco"
           ],
           "correct": 0,
-          "explanation": "Respuesta correcta: Castillo, tiendas y oficina de turismo."
+          "explanation": "Oficina de turismo → mapa → casco antiguo. La información del diálogo permite deducir la respuesta."
         }
       ]
     }
