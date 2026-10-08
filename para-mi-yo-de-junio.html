@@ -6,7 +6,7 @@
 @page{size:A4;margin:15mm}
 @media print{html,body{background:white!important;color:#183e38!important;color-scheme:light}body> :not(#printSheet){display:none!important}#printSheet{display:block;font-family:Georgia,serif}#printSheet h1{font-size:30pt;margin:10mm 0 3mm}#printSheet p{font-size:12pt}.paper-footer{margin-top:5mm;font-size:10pt;border-top:1px solid #526e65;padding-top:4mm}}
 </style></head><body>
-<header><a href="index.html">← TY Spanish</a><span>PARA MI YO DE JUNIO · Sr. Martín</span><div><button id="fullscreen">Pantalla completa</button> <button id="print">Imprimir carta</button></div></header>
+<header><a href="index.html">← Español en juego</a><span>PARA MI YO DE JUNIO · Sr. Martín</span><div><button id="fullscreen">Pantalla completa</button> <button id="print">Imprimir carta</button></div></header>
 <div id="progress" aria-hidden="true"><div id="bar"></div></div>
 <main class="layout"><div class="art" id="art" aria-hidden="true"></div><section aria-live="polite"><span class="eyebrow" id="count"></span><h1 id="title"></h1><p id="instruction" lang="en"></p><p id="hint" lang="en" hidden></p><div id="model" hidden></div><div class="bank" id="bank" hidden></div><p class="tip" id="own" lang="en" hidden>Your own idea is always welcome. Write on your letter, not on this screen.</p><button class="primary" id="reveal">Mostrar ayuda</button></section></main>
 <footer><button id="prev">← Anterior</button><select id="jump" aria-label="Elegir pantalla"></select><button class="primary" id="next">Siguiente →</button></footer>
@@ -23,4 +23,5 @@ function move(delta){current=Math.max(0,Math.min(steps.length-1,current+delta));
 el('prev').onclick=()=>move(-1);el('next').onclick=()=>move(1);el('jump').onchange=e=>{current=Number(e.target.value);show()};el('reveal').onclick=()=>toggle(!visible);el('print').onclick=()=>window.print();
 el('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch{el('fullscreen').textContent='Usa el modo de pantalla completa del navegador'}};
 document.addEventListener('keydown',e=>{if(/INPUT|SELECT|TEXTAREA|BUTTON/.test(e.target.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();move(1)}if(e.key==='ArrowLeft'){e.preventDefault();move(-1)}if(e.code==='Space'){e.preventDefault();toggle(!visible)}});show();
+if(new URLSearchParams(window.location.search).get("imprimir")==="1"){window.addEventListener("load",()=>window.print(),{once:true})}
 </script></body></html>
